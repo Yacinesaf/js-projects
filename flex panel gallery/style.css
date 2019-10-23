@@ -1,35 +1,3 @@
-/* body {
-  margin: 0;
-  padding: 0;
-}
-.cont {
-  display: flex;
-  min-height: 100vh;
-}
-.r {
-  background: yellowgreen;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition: 1s;
-  font-size: 20px;
-}
-.blue {
-  background: blue;
-}
-.red {
-background: red;
-}
-.green {
-  background: green;
-}
-.bigger {
-  font-size: 40px;
-  flex: 3;
-} */
-
 body {
   padding: 0;
   margin: 0;
@@ -48,21 +16,11 @@ body {
   align-items: center;
   flex-direction: column;
   font-size: 40px;
-  transition: 1s;
+  transition: 1.5s;
   color: white;
-  text-shadow: 4px 4px 4px #434343;
   font-family: 'Hammersmith One', sans-serif;
 }
 
-/* .components > * {
-  margin: 0;
-  width: 100%;
-  transition: 1s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 /* .components > :first-child {
   transform: translateY(-100%);
@@ -106,17 +64,44 @@ body {
   background-size: cover;
 }
 
+
 .component-opened {
   flex: 2;
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Hammersmith One', sans-serif;
 }
-
-.text-hidden {
+.topPadding {
+  padding-top : 250px;
+}
+.hidden {
+  animation: fadeOut 1s;
   opacity: 0;
-  transition: 0.2s;
+  padding-top: 250px;
+  transition: padding 1s;
 }
 .text-shown {
-  opacity: 1;
-  transition: 0.2s;
+  animation: fadeIn 1s;
+  padding-top: 0px;
+  transition: padding 1s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-out {
+  animation: fadeOut 1s;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
