@@ -1,0 +1,122 @@
+/* body {
+  margin: 0;
+  padding: 0;
+}
+.cont {
+  display: flex;
+  min-height: 100vh;
+}
+.r {
+  background: yellowgreen;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s;
+  font-size: 20px;
+}
+.blue {
+  background: blue;
+}
+.red {
+background: red;
+}
+.green {
+  background: green;
+}
+.bigger {
+  font-size: 40px;
+  flex: 3;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.components {
+  background: green;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 40px;
+  transition: 1s;
+  color: white;
+  text-shadow: 4px 4px 4px #434343;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* .components > * {
+  margin: 0;
+  width: 100%;
+  transition: 1s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .components > :first-child {
+  transform: translateY(-100%);
+}
+.components > :last-child {
+  transform: translateY(100%);
+}
+.components-active > :first-child {
+  transform: translateY(0);
+}
+.components-active > :last-child {
+  transform: translateY(0);
+} */
+
+.bg1 {
+  background: url(bg1.jpg);
+  background-size: cover;
+}
+
+.bg2 {
+  background: url(bg3.jpg);
+  box-shadow: -11px 0px 14px -6px rgb(12, 12, 12);
+  background-size: cover;
+}
+
+.bg3 {
+  background: url(bg2.jpg);
+  box-shadow: -11px 0px 14px -6px rgb(12, 12, 12);
+  background-size: cover;
+}
+
+.bg4 {
+  background: url(bg4.jpg);
+  box-shadow: -11px 0px 14px -6px rgb(12, 12, 12);
+  background-size: cover;
+}
+
+.bg5 {
+  background: url(bg5.jpg);
+  box-shadow: -11px 0px 14px -6px rgb(12, 12, 12);
+  background-size: cover;
+}
+
+.component-opened {
+  flex: 2;
+  font-size: 70px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.text-hidden {
+  opacity: 0;
+  transition: 0.2s;
+}
+.text-shown {
+  opacity: 1;
+  transition: 0.2s;
+}
